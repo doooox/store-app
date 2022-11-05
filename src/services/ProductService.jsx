@@ -18,7 +18,7 @@ class ProductService{
         },
         {
             id:5,
-            name: 'headphones'
+            name: 'Headphones'
         }
     ];
 

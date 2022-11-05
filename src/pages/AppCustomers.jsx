@@ -11,9 +11,8 @@ const AppCustomers = () => {
     const addCustomerHandler = (firstName, lastName) => {
         const newCustomer = CustomerService.create({ firstName, lastName });
         setCustomers([...customers, newCustomer]);
-
     }
-    console.log(customers);
+
     const deleteHandler = (id) => {
         const isDeleted = CustomerService.delete(id);
         if (isDeleted) {
