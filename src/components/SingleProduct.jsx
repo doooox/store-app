@@ -1,10 +1,17 @@
 import React from 'react'
 
-const SingleProduct = ({ name }) => {
+
+const SingleProduct = ({ id, name, count, onIncrement, onDecrement }) => {
+
     return (
         <div>
             <ul>
-                <li>{name}</li>
+                <li>
+                    <p>{name}</p>
+                    <button onClick={() => { onIncrement(id) }}>+</button>
+                    <button onClick={() => { onDecrement(id) }}>-</button>
+                    <p>{count}</p>
+                </li>
             </ul>
         </div>
     )
