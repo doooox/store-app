@@ -12,9 +12,9 @@ const LatestPurchase = () => {
                 <p>{customer.firstName} {customer.lastName} </p>
             </div>
             <div>
-                {!customer.product ?
+                {!customer.products ?
                     <p>No items</p> :
-                    customer.product.map((product) => <li>{product}</li>
+                    customer.products.map((product) => <li key={product.id}> {product.name} </li>
                     )}
             </div>
         </div>

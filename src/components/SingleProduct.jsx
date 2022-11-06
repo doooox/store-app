@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 
 const SingleProduct = ({ id, name, count, onIncrement, onDecrement }) => {
@@ -11,6 +12,7 @@ const SingleProduct = ({ id, name, count, onIncrement, onDecrement }) => {
                     <button onClick={() => { onIncrement(id) }}>+</button>
                     <button onClick={() => { onDecrement(id) }}>-</button>
                     <p>{count}</p>
+                    <Link to={`/products/${id}`}>Buy</Link>
                 </li>
             </ul>
         </div>

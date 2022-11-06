@@ -3,27 +3,27 @@ class ProductService {
         {
             id: 1,
             name: 'Laptop',
-            count: 0
+            count: 10
         },
         {
             id: 2,
             name: 'Keybord',
-            count: 0
+            count: 10
         },
         {
             id: 3,
             name: 'Mouse',
-            count: 0
+            count: 10
         },
         {
             id: 4,
             name: 'Monitor',
-            count: 0
+            count: 10
         },
         {
             id: 5,
             name: 'Headphones',
-            count: 0
+            count: 10
         }
     ];
 

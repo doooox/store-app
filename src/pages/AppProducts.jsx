@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import SingleProduct from '../components/SingleProduct';
 import ProductService from '../services/ProductService'
 
@@ -9,18 +10,19 @@ const AppProducts = () => {
 
 
     const incrementHandler = (id) => {
-        const newCount = ProductService.increment(id);
+        ProductService.increment(id);
 
         setProducts([...products]);
     };
     const decrementHandler = (id) => {
-        const newCount = ProductService.decrement(id);
+        ProductService.decrement(id);
 
         setProducts([...products]);
     };
     const filterHandler = (e) => {
         setFilter(e.target.value)
     }
+    console.log(products);
     const filterProducts = products.filter((product) => product.name.toLowerCase().includes(filter.toLocaleLowerCase()))
     return (
         <div>
